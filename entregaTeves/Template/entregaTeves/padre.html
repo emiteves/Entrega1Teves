@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      
+        <title>¡Bienvenidos a Qatar!</title>
+        {% load static %}
+       
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href= "{% static 'entregaTeves/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+       <!-- Callout-->
+       <section class="callout">
+        <div class="container px-2 px-lg-3 text-center">
+            <h2 class="mx-auto mb-3">
+                ¡Bienvenidos a Qatar!
+                
+            </h2>
+            <a class="btn btn-primary btn-xl" href="{% url 'futbolistas' %}">Futbolistas</a>
+            <a class="btn btn-primary btn-xl" href="{% url 'selecciones' %}">Selecciones</a>
+            <a class="btn btn-primary btn-xl" href="{% url 'tecnicos' %}">Tecnicos</a>
+        </div>
+    </section>
+     <!-- Page heading-->
+     
+     {% block section_name %}
+     {% endblock %}
+ </div>
+</div>
+
+</header>
+<!-- este es el contenido que cambia --> 
+{% block contenidoQueCambia %}
+{% endblock %}
+<!-- Footer-->
+<footer class="footer bg-light">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+ <ul class="list-inline mb-2">
+   
+ </ul>
+ <p class="text-muted small mb-4 mb-lg-0">&copy; Primera App Coder 2022. All Rights Reserved.</p>
+</div>
+<div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+ <ul class="list-inline mb-0">
+
+</div>
+</footer>

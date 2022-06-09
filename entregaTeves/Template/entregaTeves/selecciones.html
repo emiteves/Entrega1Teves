@@ -1,0 +1,18 @@
+{% extends "entregaTeves/padre.html" %}
+{% load static %}
+{% block section_name %}
+
+<h3> Selecciones </h3>
+
+{% endblock %}
+
+{% block contenidoQueCambia %}
+
+
+{% for f in Selecciones %}
+    
+<li>Grupo {{f.grupo}} - {{f.pais}}</li>  
+
+{%endfor %}             
+         
+{% endblock %}

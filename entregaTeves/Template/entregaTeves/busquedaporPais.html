@@ -1,0 +1,17 @@
+{% extends "entregaTeves/padre.html" %}
+{% load static %}
+
+{% block section_name %}
+
+<h1> Ingrese un país</h1>
+                            
+{% endblock %}
+
+{% block contenidoQueCambia %}
+<form action="{% url 'buscar' %}" method = "GET"> 
+    <input type="text" name="pais" placeholder="PAIS" id="pais">
+    <input type="submit" value="Buscar"> 
+</form>
+
+
+{% endblock %}
